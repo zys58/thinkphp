@@ -1,0 +1,12 @@
+[ 2016-01-29T14:15:36+08:00 ] ::1 /code/index.php/userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+ERR: 无法加载模块:Userinfo
+
+[ 2016-01-29T14:15:57+08:00 ] ::1 /code/index.php/userinfo/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载模块:Userinfo
+
