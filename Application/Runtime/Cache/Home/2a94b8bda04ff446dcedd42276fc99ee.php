@@ -35,9 +35,15 @@
 									<th width="20%" class="buy_tr">联系方式</th>
 									<th width="20%" class="buy_tr">到期时间</th>
 									<th width="10%" class="buy_tr">操作</th>
-									<?php  $sql="select * from authorize limit $offset,$page_size"; $result=mysql_query($sql); if($result&&mysql_num_rows($result)){ while ($row=mysql_fetch_assoc($result)) { echo "<tr>"; echo "<td width='10%'' class='buy_tr'>".$row['username']."</td>"; echo "<td width='10%'' class='buy_tr'>".$row['domain']."</td>"; echo "<td width='10%'' class='buy_tr'>".$row['ip']."</td>"; echo "<td width='20%'' class='buy_tr'>".$row['qq']."</td>"; echo "<td width='20%'' class='buy_tr'>".$row['tel']."</td>"; echo "<td width='20%'' class='buy_tr'>".date("Y-m-d",$row['time'])."</td>"; echo "<td width='10%'' class='buy_tr'>
-												<a href='authorize-chanage.php?id=".$row['id']."'>修改</a>||<a href='authorize-del.php?id=".$row['id']."'>删除</a>
-											</td>"; echo "</tr>"; } } ?>
+											<tr>
+											<td width='10%' class='buy_tr'><?php echo ($list['username']); ?></td>
+											<td width='10%' class='buy_tr'><?php echo ($list['mac']); ?></td>
+											<td width='10%' class='buy_tr'><?php echo ($list['jieru']); ?></td>
+											<td width='20%' class='buy_tr'><?php echo ($list['lxfs']); ?></td>
+											<td width='20%' class='buy_tr'>{date("Y-m-d",time())}</td>
+											<td width='10%' class='buy_tr'>											<a href='/code/index.php/Home/Userinfo/add=.$row['id']."'>修改</a>||<a href='/code/index.php/Home/Userinfo/del'>删除</a>
+											</td>
+											</tr>
 									
 								</tbody>
 							</table>

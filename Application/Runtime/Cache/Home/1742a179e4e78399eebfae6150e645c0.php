@@ -29,8 +29,8 @@
 							<table width="100%" cellspacing="0" cellpadding="5" border="0" bgcolor="#ffffff" align="center" class="cfBox">
 								<tbody>
 		   <iframe id="frame_profile" name="frame_profile" style="display: none"></iframe>
-           <form action="/code/index.php/Home/Userinfo/add"method="post" enctype="multipart/form-data" autocomplete="off" target="frame_profile">
-				
+           <form action="/code/index.php/Home/Userinfo/add"method="post" >
+				<!-- <form action="/code/index.php/Home/Userinfo/add"method="post" enctype="multipart/form-data" autocomplete="off" target="frame_profile"> -->
 			<div id="con">
                 <dl>
                     <dt id="acc">用户名：</dt>
